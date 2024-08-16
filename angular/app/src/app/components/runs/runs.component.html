@@ -1,0 +1,39 @@
+<p>run component works!</p>
+<table>
+    <thead>
+        <tr>
+            <th>Run ID</th>
+            <th>Runner ID</th>
+            <th>Name</th>
+            <th>NCC Competition</th>
+            <th>NCC Year</th>
+            <th>NCC Round</th>
+            <th>Run Timestamp</th>
+            <th>Run Duration (seconds)</th>
+            <th>Target Duration (seconds)</th>
+            <th>Duration vs Target (seconds)</th>
+            <th>New Target Duration (seconds)</th>
+            <th>Base Points</th>
+            <th>Bonus Points</th>
+            <th>Finish Position</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let run of runs">
+            <td>{{ run.runs_id }}</td>
+            <td>{{ run.runners_id }}</td>
+            <td>{{ run.name }}</td>
+            <td>{{ run.ncc_competition }}</td>
+            <td>{{ run.ncc_year }}</td>
+            <td>{{ run.ncc_round }}</td>
+            <td>{{ run.run_timestamp }}</td>
+            <td>{{ run.run_duration_seconds }}</td>
+            <td>{{ run.target_duration_seconds }}</td>
+            <td>{{ run.duration_vs_target_seconds }}</td>
+            <td>{{ run.new_target_duration_seconds }}</td>
+            <td>{{ run.base_points }}</td>
+            <td>{{ run.bonus_points }}</td>
+            <td>{{ run.finish_position }}</td>
+        </tr>
+    </tbody>
+</table>
