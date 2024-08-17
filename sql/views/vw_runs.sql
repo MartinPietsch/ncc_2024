@@ -1,3 +1,4 @@
+DROP VIEW IF EXISTS public.vw_runs;
 create or replace view public.vw_runs as 
 
 select 
@@ -17,3 +18,4 @@ select
   runs.finish_position
 from 
   runs left join runners on runs.runner_id = runners.id;
+select * from public.vw_runs order by ncc_year, ncc_round, ncc_competition, (base_points+bonus_points) desc, run_timestamp ;

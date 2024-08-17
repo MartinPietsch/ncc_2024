@@ -7,7 +7,8 @@
 */bazel-out
 angular/app/.angular/
 angular/app/node_modules/
-/angular/app/src/environments
+angular/app/dist/
+angular/app/src/environments/
 
 
 # Node
@@ -44,4 +45,5 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
 
